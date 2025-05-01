@@ -1,37 +1,14 @@
 function bold() {
-    const texts = document.getElementById("fonts");
-    if (texts.style.fontWeight === "bold") {
-        texts.style.fontWeight = "normal";
+    document.execCommand('bold', false, null);
 
-    } else {
-        texts.style.fontWeight = "bold";
-
-
-    }
 }
 
 function underline() {
-    const texts = document.getElementById("fonts");
-    if (texts.style.textDecoration == "underline") {
-        texts.style.textDecoration = "none";
-
-    } else {
-        texts.style.textDecoration = "underline";
-
-
-    }
+    document.execCommand('underline', false, null);
 }
 
 function italic() {
-    const texts = document.getElementById("fonts");
-    if (texts.style.fontStyle == "italic") {
-        texts.style.fontStyle = "normal";
-
-    } else {
-        texts.style.fontStyle = "italic";
-
-
-    }
+    document.execCommand('italic', false, null);
 }
 
 function leftAlign() {
@@ -55,9 +32,18 @@ function justifyAlign() {
 
 }
 
-function colorChange(){
-    const texts = document.getElementById("fonts");
-    const colors=document.getElementById("color").value;
-    texts.style.color=colors;
+function colorChange() {
 
+    const colors = document.getElementById("color").value;
+
+    document.execCommand('foreColor', false, colors);
+
+}
+
+function undo() {
+    document.execCommand('undo', false, null);
+}
+
+function redo() {
+    document.execCommand('redo', false, null);
 }
