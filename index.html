@@ -11,7 +11,7 @@
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <title>Editor</title>
+        <title>Text Editor</title>
 </head>
 
 
@@ -21,8 +21,9 @@
 
 
 
-        <div class="border-2  ">
-                <div class="flex justify-center bg-black p-3">
+        <div class="border-2 ">
+                <div class="flex justify-center bg-black p-3 fixed w-screen z-10 rounded-lg">
+
                         <button class="focus: outline-2 focus:outline-white " onclick="bold()"><i
                                         class="fa fa-bold px-5 text-white hover:text-gray-400 cursor-pointer"
                                         aria-hidden="true"></i></button>
@@ -71,7 +72,7 @@
                                         aria-hidden="true"></i></button>
                 </div>
 
-                <div id="fonts" contenteditable="true" class="w-screen h-screen outline-none p-5 bg-white"></div>
+                <div id="fonts" contenteditable="true" class="w-screen h-screen outline-none p-5 bg-white mt-20"></div>
 
         </div>
 </body>
